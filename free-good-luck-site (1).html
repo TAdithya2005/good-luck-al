@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adithya's Good Luck Message for A/L Exams!</title>
+    <style>
+        :root {
+            --primary-color: #4CAF50;
+            --accent-color: #45a049;
+            --text-color: #333;
+            --bg-color: #f5f5f5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            -webkit-tap-highlight-color: transparent; /* Removes tap highlight on mobile */
+        }
+
+        header {
+            background-image: linear-gradient(45deg, #4CAF50, #45a049);
+            color: white;
+            text-align: center;
+            padding: 1.5rem 1rem;
+        }
+
+        header h1 {
+            font-size: clamp(1.5rem, 5vw, 2.5rem); /* Responsive font size */
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: clamp(1rem, 3vw, 1.2rem);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .countdown {
+            background-color: white;
+            border-radius: 15px;
+            padding: 1.5rem 1rem;
+            margin: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .countdown h2 {
+            font-size: clamp(1.2rem, 4vw, 1.8rem);
+        }
+
+        #timer {
+            font-size: clamp(1.8rem, 6vw, 2.5rem);
+            font-weight: bold;
+            color: var(--primary-color);
+            margin: 1rem 0;
+            padding: 0.5rem;
+            background-color: #f8f8f8;
+            border-radius: 10px;
+        }
+
+        .message-section {
+            background-color: white;
+            border-radius: 15px;
+            padding: 1.5rem 1rem;
+            margin: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .quotes {
+            margin: 1rem 0;
+        }
+
+        blockquote {
+            border-left: 4px solid var(--primary-color);
+            padding: 1rem;
+            margin: 1rem 0;
+            background-color: #f9f9f9;
+            border-radius: 0 10px 10px 0;
+            font-size: clamp(0.9rem, 3vw, 1.1rem);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .gallery-item {
+            background-color: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:active {
+            transform: scale(0.98); /* Subtle touch feedback */
+        }
+
+        .gallery-item h3 {
+            font-size: clamp(1.1rem, 4vw, 1.5rem);
+            margin-bottom: 0.5rem;
+        }
+
+        .gallery-item p {
+            font-size: clamp(0.9rem, 3vw, 1rem);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem 1rem;
+            background-image: linear-gradient(45deg, #4CAF50, #45a049);
+            color: white;
+            margin-top: 2rem;
+        }
+
+        /* Tablet Screens */
+        @media (min-width: 600px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .container {
+                padding: 1.5rem;
+            }
+        }
+
+        /* Desktop Screens */
+        @media (min-width: 900px) {
+            .gallery {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .gallery-item:hover {
+                transform: translateY(-5px);
+            }
+        }
+
+        /* Mobile Optimizations */
+        @media (max-width: 600px) {
+            .countdown, .message-section, .gallery-item {
+                padding: 1rem;
+            }
+
+            blockquote {
+                padding: 0.8rem;
+            }
+
+            footer {
+                padding: 1rem;
+            }
+
+            /* Better touch targets */
+            .gallery-item {
+                min-height: 120px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+
+        /* Dark mode support */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1a1a1a;
+                --text-color: #ffffff;
+            }
+
+            .countdown, .message-section, .gallery-item {
+                background-color: #2d2d2d;
+            }
+
+            blockquote {
+                background-color: #333;
+            }
+
+            #timer {
+                background-color: #333;
+            }
+        }
+
+        /* Remove sticky hover on mobile devices */
+        @media (hover: none) {
+            .gallery-item:hover {
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Good Luck for A/L! 🍀</h1>
+        <p>From Adithya to All Students</p>
+    </header>
+
+    <div class="container">
+        <section class="countdown">
+            <h2>Countdown to Exams</h2>
+            <div id="timer">Loading...</div>
+            <p>Every moment counts! 💪</p>
+        </section>
+
+        <section class="message-section">
+            <h2>Words of Encouragement</h2>
+            <div class="quotes">
+                <blockquote>💫 "Your hard work today will define your success tomorrow. Keep pushing forward!"</blockquote>
+                <blockquote>🌟 "Success is not just about the destination, but the journey. Enjoy the learning process!"</blockquote>
+                <blockquote>✨ "Believe in yourself as much as we believe in you. You've got this!"</blockquote>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <div class="gallery-item">
+                <h3>Stay Focused 🎯</h3>
+                <p>Break big goals into small, achievable tasks</p>
+            </div>
+            <div class="gallery-item">
+                <h3>Take Care 💝</h3>
+                <p>Balance study with rest and self-care</p>
+            </div>
+            <div class="gallery-item">
+                <h3>Keep Going 🌟</h3>
+                <p>Every small step leads to success</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Wishing you the very best! 🌟</p>
+        <p>Created with ❤️ by Adithya</p>
+    </footer>
+
+    <script>
+        // Set your exam date here
+        const examDate = new Date("December 12, 2024 00:00:00").getTime();
+
+        function updateTimer() {
+            const now = new Date().getTime();
+            const distance = examDate - now;
+
+            if (distance < 0) {
+                document.getElementById("timer").innerHTML = "Best of luck! 🌟";
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("timer").innerHTML = 
+                `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        }
+
+        // Update timer immediately and then every second
+        updateTimer();
+        setInterval(updateTimer, 1000);
+
+        // Prevent zoom on double tap for iOS devices
+        document.addEventListener('touchend', function(event) {
+            event.preventDefault();
+        }, false);
+    </script>
+</body>
+</html>
